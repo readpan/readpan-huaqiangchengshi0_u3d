@@ -1,20 +1,37 @@
-name: Test
+# name: Test
 
-on:
-  push
+# on:
+#   push
+
+# jobs:
+#   test-job:
+#     name: Run tests
+#     runs-on: macOS-latest
+#     steps:
+#       env:
+#         UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+#         UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+#         UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
+#       run: echo "Hello World"
+#     uses: webbertakken/unity-test-runner@v1.6
+#     with:
+#       projectPath: ./
+#       unityVersion: 2019.3.2f1
+
+
+name: Greeting from Mona
+on: push
 
 jobs:
-  test-job:
-    name: Run tests
+  my-job:
+    name: My Job
     runs-on: macOS-latest
     steps:
+    - name: Print a greeting
       env:
-        UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-        UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-        UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
-      run: echo "Hello World"
-    # uses: webbertakken/unity-test-runner@v1.6
-    # with:
-    #   projectPath: ./
-    #   unityVersion: 2019.3.2f1
-
+        MY_VAR: Hi there! My name is
+        FIRST_NAME: Mona
+        MIDDLE_NAME: The
+        LAST_NAME: Octocat
+      run: |
+        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
