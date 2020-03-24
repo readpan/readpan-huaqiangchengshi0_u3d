@@ -11,8 +11,9 @@ jobs:
       UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
       UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
       UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
-    uses: webbertakken/unity-test-runner@v1.6
-    with:
-      projectPath: ./
-      unityVersion: 2019.3.2f1
+    run: echo "Hello World"
+    # uses: webbertakken/unity-test-runner@v1.6
+    # with:
+    #   projectPath: ./
+    #   unityVersion: 2019.3.2f1
 
