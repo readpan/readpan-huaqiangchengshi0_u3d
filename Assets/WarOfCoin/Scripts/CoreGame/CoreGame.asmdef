@@ -1,0 +1,15 @@
+{
+    "name": "CoreGame",
+    "references": [
+        "GUID:734fc17105ba45a180efd3e38aa181ed"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
